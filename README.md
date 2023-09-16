@@ -18,5 +18,13 @@ Cheat Sheet for everything I need to cheat on
 
 - git log
 
-// Follow on commits //
+// Resetting to previous commit version //
 
+- git reset --hard {commit code ID}
+
+// Useful other commands //
+
+- git branch
+- git status
+- git branch {name of new branch}
+- git checkout {name of branch moving to}
