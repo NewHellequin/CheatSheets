@@ -7,7 +7,7 @@ Cheat Sheet for everything I need to cheat on
 
 {make required changes in code}
 
- {ctrl + ' to open terminal}
+{ctrl + ' to open terminal}
 
 - git init
 - git add -A
@@ -21,6 +21,13 @@ Cheat Sheet for everything I need to cheat on
 // Resetting to previous commit version //
 
 - git reset --hard {commit code ID}
+
+// Branches //
+
+- git branch
+- git branch {name of new branch}
+- git checkout {name of branch moving to}
+- (While in consuming branch) git merge {name of branch to be merged}
 
 // Useful other commands //
 
