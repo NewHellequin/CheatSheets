@@ -1,6 +1,10 @@
 # CheatSheets
 Cheat Sheet for everything I need to cheat on
 
+// **Linking VSCode to GitHub Repo** //
+
+git remote add origin <URL>
+
 // **Git process for Visual Code Studio: Making commits through the terminal** //
 
 // **Committing code to Repo** //
