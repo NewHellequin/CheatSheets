@@ -1,39 +1,18 @@
-# CheatSheets
-Cheat Sheet for everything I need to cheat on
+// **New Hellequin's Cheatsheets** //
 
-// **Linking VSCode to GitHub Repo** //
+These cheatsheets were put together while learning to code using online training materials and collating basic commands into central documents for ease of reference.
 
-- git remote add origin <URL>
+These are not aimed for seasoned / experienced coders.
 
-// **Git process for Visual Code Studio: Making commits through the terminal** //
+Recommendations on better, simpler or updated syntax is welcome.
 
-// **Committing code to Repo** //
+Current Cheetshets:
 
-{make required changes in code}
-
-{ctrl + ' to open terminal}
-
-- git init (for initial commits)
-- git add -A
-- git commit -m '{message - initial commit / additional of / change to}'
-- git push origin master {or desired branch}
+- cheatsheets.md (main git quick guide)
+- what-array.md (JavaScript array guide)
+- vim (coming soon!)
 
 
-// **Reviewing previous commits** //
+- old_versions.md (original collection when coding with VS Code - very early on)
 
-- git log
 
-// **Resetting to previous commit version** //
-
-- git reset --hard {commit code ID}
-
-// **Branches** //
-
-- git branch
-- git branch {name of new branch}
-- git checkout {name of branch moving to}
-- (While in consuming branch) git merge {name of branch to be merged}
-
-// **Useful other commands** //
-
-- git status
