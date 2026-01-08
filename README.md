@@ -1,4 +1,4 @@
-// **New Hellequin's Cheatsheets** //
+# **New Hellequin's Cheatsheets**
 
 These cheatsheets were put together while learning to code using online training materials and collating basic commands into central documents for ease of reference.
 
