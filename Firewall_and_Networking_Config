@@ -1,0 +1,14 @@
+## 2. Firewall and Networking
+
+### 2.1 Enable UFW Firewall
+```bash
+sudo ufw allow OpenSSH
+sudo ufw allow 80
+sudo ufw allow 443
+sudo ufw enable
+sudo ufw status
+```
+
+### 2.2 (Optional) Domain Setup
+- Point your domain’s **A record** to your server’s public IP
+- Wait for DNS propagation
