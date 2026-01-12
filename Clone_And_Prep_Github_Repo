@@ -1,0 +1,26 @@
+## 4. Clone and Prepare Your GitHub Repository
+
+### 4.1 Set Up SSH for GitHub (Recommended)
+```bash
+ssh-keygen -t ed25519 -C "you@email.com"
+cat ~/.ssh/id_ed25519.pub
+```
+Add the key to GitHub → Settings → SSH Keys
+
+### 4.2 Clone the Repository
+```bash
+mkdir -p ~/sites
+cd ~/sites
+git clone git@github.com:USERNAME/REPO.git
+cd REPO
+```
+
+### 4.3 Verify Project Structure
+Typical structure:
+```
+index.html
+/css
+/js
+/assets
+```
+Ensure `index.html` is at the root or adjust server config accordingly.
