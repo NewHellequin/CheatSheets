@@ -1,0 +1,12 @@
+## 3. Install Core Packages
+
+### 3.1 Install Git, Curl, and Build Tools
+```bash
+sudo apt install -y git curl build-essential
+```
+
+### 3.2 Install Neovim (Latest Stable)
+```bash
+sudo apt install -y neovim
+```
+(Optional: install via PPA or AppImage if you want the newest version)
