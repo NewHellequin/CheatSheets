@@ -1,0 +1,20 @@
+## 8. Deployment Workflow (Git-Based)
+
+### 8.1 Pull Updates
+```bash
+cd ~/sites/REPO
+git pull origin main
+```
+
+### 8.2 (Optional) Use a Deploy Script
+```bash
+nvim deploy.sh
+```
+```bash
+#!/bin/bash
+set -e
+git pull
+sudo systemctl reload nginx
+```
+```bash
+chmod +x deploy.sh
