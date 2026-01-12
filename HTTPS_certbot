@@ -1,0 +1,16 @@
+## 7. HTTPS with Let’s Encrypt (Strongly Recommended)
+
+### 7.1 Install Certbot
+```bash
+sudo apt install -y certbot python3-certbot-nginx
+```
+
+### 7.2 Obtain SSL Certificate
+```bash
+sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
+```
+
+### 7.3 Auto-Renewal Check
+```bash
+sudo certbot renew --dry-run
+```
