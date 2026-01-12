@@ -1,0 +1,31 @@
+## 1. Initial Server Preparation
+
+### 1.1 Update the System
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+### 1.2 Create a Non-Root User (Recommended)
+```bash
+sudo adduser deploy
+sudo usermod -aG sudo deploy
+su - deploy
+```
+
+### 1.3 Configure SSH Security
+- Copy your SSH key to the server
+```bash
+ssh-copy-id deploy@YOUR_SERVER_IP
+```
+- Disable password login and root login
+```bash
+sudo nvim /etc/ssh/sshd_config
+```
+Set:
+```
+PermitRootLogin no
+PasswordAuthentication no
+```
+Restart SSH:
+```bash
+sudo systemctl restart ssh
