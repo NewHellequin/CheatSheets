@@ -1,0 +1,14 @@
+## 5. Local Development Workflow (NVIM)
+
+### 5.1 Edit Files with Neovim
+```bash
+nvim index.html
+```
+
+### 5.2 (Optional) Install NVIM Plugins
+Recommended basics:
+- File tree (nvim-tree)
+- LSP (html, css, ts/js)
+- Treesitter
+
+Keep config minimal for server work.
