@@ -1,0 +1,17 @@
+## 10. Monitoring & Maintenance
+
+### 10.1 Check Logs
+```bash
+sudo tail -f /var/log/nginx/error.log
+```
+
+### 10.2 System Health
+```bash
+htop
+free -h
+df -h
+```
+
+### 10.3 Keep System Updated
+```bash
+sudo apt update && sudo apt upgrade
