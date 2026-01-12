@@ -1,0 +1,6 @@
+## 9. File Permissions
+
+Ensure Nginx can read files:
+```bash
+sudo chown -R deploy:deploy ~/sites/REPO
+chmod -R 755 ~/sites
