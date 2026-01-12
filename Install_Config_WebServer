@@ -1,0 +1,43 @@
+## 6. Install and Configure a Web Server
+
+### Option A: Nginx (Recommended for Production)
+
+#### 6.1 Install Nginx
+```bash
+sudo apt install -y nginx
+```
+
+#### 6.2 Start and Enable
+```bash
+sudo systemctl start nginx
+sudo systemctl enable nginx
+```
+
+#### 6.3 Configure Server Block
+```bash
+sudo nvim /etc/nginx/sites-available/your-site
+```
+Example config:
+```
+server {
+    listen 80;
+    server_name yourdomain.com www.yourdomain.com;
+
+    root /home/deploy/sites/REPO;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+Enable it:
+```bash
+sudo ln -s /etc/nginx/sites-available/your-site /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
+Visit:
+```
+http://YOUR_SERVER_IP
