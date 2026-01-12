@@ -1,0 +1,7 @@
+## 11. Security Best Practices (Baseline)
+
+- SSH keys only
+- Firewall enabled
+- HTTPS enforced
+- Regular updates
+- Minimal open ports
