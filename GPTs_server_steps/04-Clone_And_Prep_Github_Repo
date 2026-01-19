@@ -9,9 +9,13 @@ Add the key to GitHub → Settings → SSH Keys
 
 ### 4.2 Clone the Repository
 ```bash
+ssh -T git@github.com // test git SSH connection
+
 mkdir -p ~/sites
 cd ~/sites
-git clone git@github.com:USERNAME/REPO.git
+git clone git@github.com:USERNAME/REPO.git // for SSH clone
+git remote set-url origin git@github.com:username/repository.git // for HTTPS connection
+git remote -v // verify connection
 cd REPO
 ```
 
